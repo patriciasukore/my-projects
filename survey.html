@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="styles.css">
+<DOCTYPE html>
+  <html lang="en"></html>
+  <head>
+    <meta charset="utf-8"></meta>
+<title>Survey Form></title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">PAT'S SURVEY FORM</h1>
+    </main>
+    <p id="description">I would like to know how you rate services offered by: Patricia Sukore Foundation for Women and Children</p>
+    <form id="survey-form">
+<select id="dropdown">
+  <option>Male</option>
+  <option>Female</option>
+</select>
+
+      <div class="input-element">
+        <label id="name-label" for="name">Name</label>
+        <input placeholder="name" id="name" type="text" required/></div>
+<div class="input-element">
+         <label id="email-label">Email</label>
+        <input placeholder="email" id="email" type="email" type="text" required/>
+        </div>
+      <div class=input-element>
+       <label id=number-label>Age</label>
+        <input placeholder="number" id="number" type="number" min="13" max="100" required/>
+        </div>
+        <div>
+          <label>Are you a beneficiary of our foundation</label></div>
+          <div>
+          <label>
+            <input type="radio" name="services" value="yes">Yes</input>
+          </label>
+          </div>
+          <div>
+          <label>
+            <input type="radio" name="services" value="no">No</input>
+          </label>
+        </div>
+        <div>
+          <label>In which area do you want our services to improve? Check more than one if it applies.</label>
+        </div>
+     <div>
+          <label>
+            <input type="checkbox" name="services" value="advocacy"/>Advovacy</label>
+          </div>
+          
+       <div>
+          <label>
+            <input type="checkbox" name="services" value="skills"/>Skills acquisition</label>
+        </div> 
+           <div>
+          <label>
+            <input type="checkbox" name="services" value="policy"/>Participatory Policy</label>
+        </div> 
+        <div>
+          <label>
+            <input type="checkbox" name="services" value="sustainable"/>Sustainable Development</label>
+        </div> 
+        <div>
+          <label>Additional Comments</label>
+          <textarea type="text"></textarea>
+        </div>
+        <div>
+          <button type="submit" id="submit">Submit</button
+           </div>
+    </form>
+  </body>
