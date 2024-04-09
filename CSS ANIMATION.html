@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box
+        {
+            width: 100px;
+            height: 100px;
+            background-color: burlywood;
+            animation: box 1s ease-in-out 0s infinite alternate;
+        }
+        @keyframes box {
+            0%{
+                background-color: chartreuse;
+                transform: translate(0);
+            }
+            30%{
+                background-color: crimson;
+            }
+            60%{
+                background-color: darkblue;
+            }
+            100%{
+                background-color: darkorange;
+                transform: translate(100px,0px);
+            }
+        }
+        /* {
+         form{
+            background-color: red;
+            transform: translate(0);
+         }
+         to{
+            background-color: aqua;
+            transform: translate(300px, 100px);
+         } */
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
